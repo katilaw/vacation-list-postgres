@@ -1,0 +1,19 @@
+<h1>Vacation Destination List</h1>
+
+<ul id="vacation-list">
+  <% @vacations.each do |destination| %>
+    <li class="destination">
+      <%= destination %>
+    </li>
+  <% end %>
+</ul>
+
+<fieldset>
+  <legend>Add Vacation Destination</legend>
+  <form method="post" action="/vacations">
+    <label for="destination">Destination</label>
+    <input type="text" name="destination" id="destination" />
+
+    <input type="submit" value="Submit" />
+  </form>
+</fieldset>
