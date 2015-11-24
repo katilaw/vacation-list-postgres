@@ -5,7 +5,7 @@ Build a vacation list app that reads and writes information to a PostegreSQL dat
 ### Getting Set Up
 
 * Install the necessary dependencies: `bundle`
-* Create a database called `vacation_list_development`.
+* Create a database called `vacation_list_development`. (`createdb vacation_list_development`)
 * Define your tables in a `schema.sql` file.
 * Create tables by running `psql vacation_list_development < schema.sql` at the command line.
 * Start the server: `ruby app.rb`
