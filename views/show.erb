@@ -1,0 +1,6 @@
+<h2><a href ="/vacations/<% @comments.first["destination"]%>"><%= @comments.first["destination"]%></a></h2>
+<ul>
+  <% @comments.each do |comment| %>
+  <li><%= comment["body"]%></li>
+  <% end %>
+</ul>

@@ -8,6 +8,7 @@ feature "user views comments" do
       conn.exec_params(sql_query_1, data_1)
     end
 
+    binding.pry
     visit "/vacations"
     click_link "toronto"
 
